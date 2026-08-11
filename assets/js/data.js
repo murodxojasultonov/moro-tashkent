@@ -29,21 +29,16 @@ window.MORO_PRODUCTS = [
 /* Featured on the home page */
 window.MORO_FEATURED = [1, 2, 5, 9, 16, 7, 4, 11];
 
+/* One boutique. Both numbers belong to it. */
 window.MORO_CONTACT = {
-  shops: [
-    {
-      key: 1,
-      tel: '+998 50 017 11 11',
-      telHref: '+998500171111',
-      map: 'https://yandex.uz/maps/?text=Tashkent%20City%20Boulevard%202A'
-    },
-    {
-      key: 2,
-      tel: '+998 99 880 40 44',
-      telHref: '+998998804044',
-      map: 'https://yandex.uz/maps/?text=Kichik%20Halqa%20Yoli%201%20Tashkent'
-    }
-  ],
+  shop: {
+    key: 1,
+    map: 'https://yandex.uz/maps/?text=Kichik%20Halqa%20Yoli%201%20Tashkent',
+    phones: [
+      { tel: '+998 99 880 40 44', href: '+998998804044' },
+      { tel: '+998 50 017 11 11', href: '+998500171111' }
+    ]
+  },
   telegram: 'https://t.me/moro_tashkent',
   instagram: 'https://www.instagram.com/moro_tashkent/',
   email: 'boutique@moro.uz'
