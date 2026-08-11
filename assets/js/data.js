@@ -29,6 +29,25 @@ window.MORO_PRODUCTS = [
 /* Featured on the home page */
 window.MORO_FEATURED = [1, 2, 5, 9, 16, 7, 4, 11];
 
+/* Labels carried by the boutique, in marquee order.
+   `year` = year the label itself was founded; leave '' when unverified —
+   the card then renders without a date rather than claiming one.
+   Descriptions live in translations.js under `br.<id>`.
+
+   TODO ALESSIO.L: no reliable founding year or profile found. Add here once
+   the boutique confirms it:  { id: 'alessio', name: 'ALESSIO.L', year: '' } */
+window.MORO_BRAND_LIST = [
+  { id: 'herno',      name: 'HERNO',             year: '1948' },
+  { id: 'escapista',  name: 'ESCAPISTA',         year: '2026' },
+  { id: 'gransasso',  name: 'GRAN SASSO',        year: '1952' },
+  { id: 'grigio',     name: 'GRIGIO',            year: ''     },
+  { id: 'edo',        name: 'EDO',               year: '2000' },
+  { id: 'henderson',  name: 'HENDERSON BARACCO', year: '1932' },
+  { id: 'ottaviani',  name: 'MAURO OTTAVIANI',   year: '1978' },
+  { id: 'vallati',    name: 'U.VALLATI',         year: '1970' },
+  { id: 'ventura',    name: 'A.VENTURA',         year: '2007' }
+];
+
 /* One boutique. Both numbers belong to it. */
 window.MORO_CONTACT = {
   shop: {

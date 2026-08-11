@@ -495,6 +495,19 @@ html[lang="ar"] .stat__l { letter-spacing: .03em; font-size: 13px; }
 .val p { font-size: 14px; color: var(--muted); line-height: 1.68; max-width: 46ch; }
 .sec--wine .val p { color: rgba(244,240,231,.62); }
 
+/* ---------- 16b. Brand roster ---------- */
+.brands { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 2.6vw, 44px); }
+.brand { display: grid; gap: 7px; align-content: start; padding-top: 22px; border-top: 1px solid var(--line); }
+.sec--wine .brand { border-color: rgba(244,240,231,.2); }
+.brand__n { font-family: var(--f-display); font-weight: 400; font-size: clamp(19px, 1.7vw, 23px); letter-spacing: .03em; line-height: 1.2; }
+.brand__y {
+  font-size: 11px; letter-spacing: .24em; color: var(--brass);
+  font-variant-numeric: tabular-nums;
+}
+html[lang="ar"] .brand__y { letter-spacing: .06em; font-size: 13px; }
+.brand__d { font-size: 14px; line-height: 1.7; color: var(--muted); max-width: 44ch; margin-top: 3px; }
+.sec--wine .brand__d { color: rgba(244,240,231,.62); }
+
 /* ---------- 17. Mosaic ---------- */
 .mosaic { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(10px, 1.2vw, 20px); }
 .mosaic figure { position: relative; overflow: hidden; background: var(--bone-2); }

@@ -296,6 +296,22 @@
     });
   }
 
+  /* ── 6b. Brand roster ─────────────────────────────────── */
+  function initBrands() {
+    var box = $('[data-brands]'); if (!box) return;
+    box.innerHTML = window.MORO_BRAND_LIST.map(function (b, n) {
+      return '' +
+        '<article class="brand reveal"' + (n % 3 ? ' data-d="' + (n % 3) + '"' : '') + '>' +
+          '<h3 class="brand__n">' + b.name + '</h3>' +
+          (b.year ? '<span class="brand__y">' + b.year + '</span>' : '') +
+          '<p class="brand__d" data-i18n="br.' + b.id + '"></p>' +
+        '</article>';
+    }).join('');
+    translate(box);
+    observe(box);
+    document.addEventListener('moro:lang', function () { translate(box); });
+  }
+
   function openModal(id, base) {
     var modal = $('#qv'); if (!modal) return;
     var p = window.MORO_PRODUCTS.filter(function (x) { return x.id === id; })[0];
@@ -357,6 +373,7 @@
     initHeader();
     initHero();
     initCatalogue();
+    initBrands();
     initModal();
     initForms();
     observe(document);
