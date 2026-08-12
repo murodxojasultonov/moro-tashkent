@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MORO — мужская одежда из Италии</title>
+<meta name="description" content="MORO — премиальная мужская одежда из Италии. Ташкент, Кичик халка йули, 1.">
+
+<!-- ═══════════════════════════════════════════════════════════
+     Базовая версия сайта. Одна страница, один язык, без
+     слайдера, каталога с фильтрами, быстрого просмотра,
+     мультиязычности и анимаций. Системные шрифты.
+     Файл самодостаточный: стили внутри, отдельного CSS/JS нет.
+     ═══════════════════════════════════════════════════════════ -->
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #22201c;
+    background: #fbf9f5;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+  /* Шапка */
+  header {
+    background: #4a161c;
+    color: #f4f0e7;
+    padding: 18px 0;
+  }
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .logo { font-size: 26px; letter-spacing: 3px; }
+  .bar a { color: #f4f0e7; text-decoration: none; font-size: 15px; }
+  .bar a:hover { text-decoration: underline; }
+
+  /* Обложка */
+  .hero { position: relative; }
+  .hero img { width: 100%; height: 420px; object-fit: cover; object-position: 50% 35%; }
+  .hero h1 {
+    position: absolute;
+    left: 0; right: 0; bottom: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: normal;
+    text-shadow: 0 2px 14px rgba(0,0,0,.6);
+  }
+
+  /* Секции */
+  section { padding: 44px 0; }
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    color: #4a161c;
+  }
+  p { margin-bottom: 12px; }
+  .muted { color: #6b665e; font-size: 15px; }
+
+  /* Бренды */
+  .brands { line-height: 2; font-size: 15px; letter-spacing: .5px; }
+
+  /* Фотографии */
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .photos img { width: 100%; height: 300px; object-fit: cover; }
+
+  /* Контакты */
+  .contacts { background: #f1ece2; }
+  .contacts p { margin-bottom: 8px; }
+
+  footer {
+    background: #22201c;
+    color: #cdc7bb;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    .photos { grid-template-columns: 1fr 1fr; }
+    .photos img { height: 200px; }
+    .hero img { height: 280px; }
+    .hero h1 { font-size: 24px; }
+    .bar { justify-content: center; text-align: center; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo">MORO</div>
+    <div>
+      <a href="tel:+998998804044">+998 99 880 40 44</a> &nbsp;
+      <a href="tel:+998500171111">+998 50 017 11 11</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="assets/img/hero/hero-01.jpg" alt="Бутик MORO в Ташкенте">
+  <h1>Премиальная мужская одежда из Италии</h1>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>О нас</h2>
+    <p>
+      MORO — бутик мужской одежды в Ташкенте. Мы привозим костюмы, верхнюю одежду,
+      трикотаж, рубашки и обувь итальянских марок.
+    </p>
+    <p>
+      Приходите в бутик — поможем подобрать вещи и ответим на вопросы.
+    </p>
+  </div>
+</section>
+
+<section style="background:#f1ece2">
+  <div class="wrap">
+    <h2>Наши марки</h2>
+    <p class="brands">
+      HERNO &nbsp;•&nbsp; ESCAPISTA &nbsp;•&nbsp; GRAN SASSO &nbsp;•&nbsp; ALESSIO.L &nbsp;•&nbsp; GRIGIO &nbsp;•&nbsp;
+      EDO &nbsp;•&nbsp; HENDERSON BARACCO &nbsp;•&nbsp; MAURO OTTAVIANI &nbsp;•&nbsp; U.VALLATI &nbsp;•&nbsp; A.VENTURA
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Коллекция</h2>
+    <div class="photos">
+      <img src="assets/img/product/p-01.jpg" alt="Пиджак" loading="lazy">
+      <img src="assets/img/product/p-02.jpg" alt="Пиджак в клетку" loading="lazy">
+      <img src="assets/img/product/p-16.jpg" alt="Костюм" loading="lazy">
+      <img src="assets/img/product/p-07.jpg" alt="Поло" loading="lazy">
+      <img src="assets/img/product/p-09.jpg" alt="Лоферы" loading="lazy">
+      <img src="assets/img/product/p-11.jpg" alt="Туфли" loading="lazy">
+    </div>
+    <p class="muted" style="margin-top:14px">Цены — по запросу. Звоните или пишите в Telegram.</p>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="wrap">
+    <h2>Контакты</h2>
+    <p><strong>Адрес:</strong> Кичик халка йули, 1, Ташкент</p>
+    <p><strong>Телефоны:</strong>
+      <a href="tel:+998998804044">+998 99 880 40 44</a>,
+      <a href="tel:+998500171111">+998 50 017 11 11</a>
+    </p>
+    <p><strong>Часы работы:</strong> понедельник – воскресенье, 10:00 – 22:00</p>
+    <p>
+      <a href="https://t.me/moro_tashkent" target="_blank" rel="noopener">Telegram</a> &nbsp;•&nbsp;
+      <a href="https://www.instagram.com/moro_tashkent/" target="_blank" rel="noopener">Instagram</a> &nbsp;•&nbsp;
+      <a href="https://yandex.uz/maps/?text=Kichik%20Halqa%20Yoli%201%20Tashkent" target="_blank" rel="noopener">Как проехать</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 MORO. Ташкент.</div>
+</footer>
+
+</body>
+</html>
